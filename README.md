@@ -5,14 +5,16 @@ CS 301 Assignment 2
 
 ## list
 
-* indexing
+* concatenation
+* repetition
+* insert
 * slicing
-* append
 * pop
 * sort
 * reverse
 * index
 * remove
+* count
 
 ## dictionary
 
@@ -23,10 +25,8 @@ CS 301 Assignment 2
 
 ## common
 
-* concatenation
-* repetition
+* indexing/key access
 * membership
+* append/add new key
 * length
-* insert
 * del
-* count
