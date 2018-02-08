@@ -25,8 +25,9 @@ CS 301 Assignment 2
 
 ## common
 
-* indexing/key access (list\[i\], dict\[key\])
-* membership (item in list/dict)
-* append/add new key (list.append(item), dict\[key\] = value)
-* length (len(list/dict))
-* del (del list\[i\], del dict\[key\])
+* test n sizes n times to produce scaling results
+
+## report
+
+* write a bit on each function
+* show graphs on important or interesting results
