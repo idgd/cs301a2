@@ -38,7 +38,7 @@ The common functions will compare the two.
 
 Dictionaries have 4 functions that are not shared with lists.
 
-At 200,000 key/value pairs, the slowest operation was grabbing the items (\texttt(items}) at 0.31 seconds, followed by grabbing all values (\texttt{values}), which took 0.21 seconds.
+At 200,000 key/value pairs, the slowest operation was grabbing the items (\texttt{items}) at 0.31 seconds, followed by grabbing all values (\texttt{values}), which took 0.21 seconds.
 Grabbing just the keys (\texttt{keys}), however, took only 0.069 seconds, which is an order of magnitude faster than either other operation; it seems grabbing keys is much easier than grabbing their values, suggesting that the only way to grab a value is through its key (or else accessing keys and values should take around the same time).
 The fastest function was the \texttt{get} function, at only 0.052 seconds, faster by a small margin than grabbing all keys.
 The \texttt{get} function provides a specific key/value pair, grabbed by key.
