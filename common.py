@@ -155,7 +155,7 @@ def delet_this_d(oo):
 		del o[g]
 		e = time()
 		a += e - s
-	return(a/n)
+	return(a/100)
 
 print("Deleting one item from a list. Guaranteed to be inside the list.")
 print("%.20f" % delet_this_l(test_l))

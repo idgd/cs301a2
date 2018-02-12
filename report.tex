@@ -76,8 +76,10 @@ Finding the length of a collection is relatively uninteresting, both taking 130 
 
 Deleting an item from a list, however, takes considerably longer than deleting a pair from a dictionary.
 Lists on average take 3,373 nanoseconds to remove an item.
-Dictionaries take only 3 nanoseconds.
-The divide in this time suggests there's something wrong with our testing methodology, but the code looks sound after several reviews.
+Dictionaries take only 339 nanoseconds.
+This is a factor of ten off, indicating that dictionaries have a much easier time deleting items.
+It's possible that lists have to perform more operations on a deletion, while dictionaries only have to dereference one hash for the structure to stay the same.
+The list may have an index that it has to update along with clearing any item's reference to the deleted item, leading to the increased runtime.
 
 Overall, dictionaries seem like faster constructs than lists in general; perhaps there is some other metric we are missing, like iteration time (as discussed in the 1st draft), or memory usage, but other than the first one, it is outside the scope of this assignment.
 
