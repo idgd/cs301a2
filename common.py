@@ -100,8 +100,9 @@ def append_d(o):
 	a = 0
 	for f in range(n):
 		r = randint(0,f)
+		i = f + n
 		s = time()
-		o[f + n] = r
+		o[i] = r
 		e = time()
 		a += e - s
 	return(a/n)
